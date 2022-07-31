@@ -1,0 +1,27 @@
+{
+  "name": "faq-accordion-card-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the FAQ accordion card coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx mix",
+    "watch": "npx mix watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheSpiritCode/FAQ-accordion-card.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheSpiritCode/FAQ-accordion-card/issues"
+  },
+  "homepage": "https://github.com/TheSpiritCode/FAQ-accordion-card#readme",
+  "devDependencies": {
+    "laravel-mix": "^6.0.49",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.54.0",
+    "sass-loader": "^12.1.0"
+  }
+}
