@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/flexbox-responsive-faq-accordion-vanilla-js-BteirI9W4U](https://www.frontendmentor.io/solutions/flexbox-responsive-faq-accordion-vanilla-js-BteirI9W4U)
 - Live Site URL: [https://thespiritcode.github.io/FAQ-accordion-card/](https://thespiritcode.github.io/FAQ-accordion-card/)
 
 ## My process
