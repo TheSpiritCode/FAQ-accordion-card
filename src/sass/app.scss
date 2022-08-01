@@ -16,91 +16,89 @@ html {
     flex-direction: column;
     min-height: 100vh;
 
-    @media (max-width: 375px) {
 
-      .container {
-        background-color: white;
-        border-radius: 25px;
-        width: 325px;
+    .container {
+      background-color: white;
+      border-radius: 25px;
+      width: 325px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      box-shadow: 0 10px 60px -5px hsla(0deg, 0%, 0%, 0.5);
+
+      #box {
+        display: none;
+        z-index: 20;
+        filter: drop-shadow(-5px 0px 15px hsla(0, 0%, 0%, 50%));
+      }
+
+      .illustration {
+        width: 76%;
+        position: absolute;
+        top: -9rem;
+
+      }
+
+      .faq {
+        padding: 2rem;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        position: relative;
-        box-shadow: 0 10px 60px -5px hsla(0deg, 0%, 0%, 0.5);
+        width: 100%;
+        margin-bottom: 2rem;
 
-        #box {
-          display: none;
-          z-index:20;
-          filter: drop-shadow(-5px 0px 15px hsla(0, 0%, 0%, 50%));
-        }
+        .faq-element {
+          border-bottom: 1px solid hsl(240, 0%, 90%);
+          padding-bottom: 0.7rem;
+          transition: 0.4s;
+          margin-left: 2rem;
+          margin-right: 2rem;
 
-        .illustration {
-          width: 76%;
-          position: absolute;
-          top: -9rem;
+          .faq-element__question {
+            text-decoration: none;
+            padding-top: 1.5rem;
+            color: $very-dark-grayish-blue;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.7rem;
 
-        }
+            &:hover {
+              color: $soft-red;
+            }
 
-        .faq {
-          padding: 2rem;
-          display: flex;
-          flex-direction: column;
-          width: 100%;
-          margin-bottom: 2rem;
+            .faq-element__question__arrow {
+              transition: 0.4s;
+              height: 100%;
+            }
+          }
 
-          .faq-element {
-            border-bottom: 1px solid hsl(240, 0%, 90%);
-            padding-bottom: 0.7rem;
-            transition: 0.4s;
-            margin-left: 2rem;
-            margin-right: 2rem;
+          .faq-element__answer {
+            color: $dark-grayish-blue;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-in-out;
 
+
+          }
+
+          &.active {
             .faq-element__question {
-              text-decoration: none;
-              padding-top: 1.5rem;
-              color: $very-dark-grayish-blue;
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-              margin-bottom: 0.7rem;
-
-              &:hover {
-                color: $soft-red;
-              }
+              font-weight: 700;
 
               .faq-element__question__arrow {
-                transition: 0.4s;
-                height: 100%;
-              }
-            }
-
-            .faq-element__answer {
-              color: $dark-grayish-blue;
-              max-height: 0;
-              overflow: hidden;
-              transition: max-height 0.4s ease-in-out;
-
-
-            }
-
-            &.active {
-              .faq-element__question {
-                font-weight: 700;
-
-                .faq-element__question__arrow {
-                  transform: rotate(180deg);
-                }
+                transform: rotate(180deg);
               }
             }
           }
+        }
 
 
-          h1 {
-            bottom: 3.3rem;
-            text-align: center;
-            font-size: 2rem;
-            font-weight: 700;
-          }
+        h1 {
+          bottom: 3.3rem;
+          text-align: center;
+          font-size: 2rem;
+          font-weight: 700;
         }
       }
     }
@@ -130,6 +128,7 @@ html {
             right: 48rem;
           }
         }
+
         .illustration {
           position: relative;
           display: flex;
@@ -138,6 +137,7 @@ html {
           top: 6rem;
           width: 100%;
           z-index: 2;
+
           picture {
             position: relative;
             left: -7rem;
