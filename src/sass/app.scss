@@ -7,7 +7,6 @@
 }
 
 html {
-  //font-size: $font-size;
 
   body {
     background-image: linear-gradient($soft-violet, $soft-blue);
@@ -17,7 +16,7 @@ html {
     flex-direction: column;
     min-height: 100vh;
 
-    @media (min-width: $mobile) {
+    @media (max-width: 375px) {
 
       .container {
         background-color: white;

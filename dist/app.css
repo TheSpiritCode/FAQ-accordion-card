@@ -12,7 +12,7 @@ html body {
   flex-direction: column;
   min-height: 100vh;
 }
-@media (min-width: 375px) {
+@media (max-width: 375px) {
   html body .container {
     background-color: white;
     border-radius: 25px;
